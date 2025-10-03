@@ -107,8 +107,11 @@
 ;; EVIL mode: jk to Normal mode
 ;; ============================
 (after! evil
-  (define-key evil-insert-state-map "jk"
-    (lambda () (interactive) (evil-normal-state))))
+  (general-define-key
+   :states 'insert
+   "j" (general-key-dispatch 'self-insert-command
+         :timeout 0.5
+         "k" #'evil-normal-state)))
 
 ;; ====
 ;; Font
