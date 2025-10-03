@@ -77,6 +77,7 @@
 ;; ======================
 ;; Org Mode Configuration
 ;; ======================
+(setq org-directory "C:/Users/shiro/notes/")
 (setq org-default-notes-file (expand-file-name "TODOs.org" org-directory))
 
 ;; Org Agenda configuration: include all .org files recursively
@@ -95,13 +96,28 @@
            (file ,(expand-file-name "refile.org" org-directory))
            "%?"))))
 
+;; ========
+;; Org-roam
+;; ========
+(use-package! org-roam
+  :custom
+  (org-roam-directory (file-truename "C:/Users/shiro/notes/"))
+  :config
+  (org-roam-db-autosync-mode)
+
+  ;; keybinds under SPC n r
+  (map! :leader
+        :prefix "n r"
+        :desc "Find node"   "f" #'org-roam-node-find
+        :desc "Create node" "n" #'org-roam-capture
+        :desc "Insert node" "i" #'org-roam-node-insert))
+
 ;; ==========================
-;; Leader key map for SPC o O
+;; Leader key map for SPC o C
 ;; ==========================
 (map! :leader
       :prefix "o"
-      :desc "Org Capture"
-      "C" #'org-capture)
+      :desc "Org Capture" "C" #'org-capture)
 
 ;; ============================
 ;; EVIL mode: jk to Normal mode
@@ -112,8 +128,3 @@
    "j" (general-key-dispatch 'self-insert-command
          :timeout 0.5
          "k" #'evil-normal-state)))
-
-;; ====
-;; Font
-;; ====
-(setq doom-font (font-spec :family "Cascadia Code" :size 14))
