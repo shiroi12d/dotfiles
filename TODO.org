@@ -1,0 +1,9 @@
+#+title: TODO
+
+* KILL Complete taking notes on Ali Abdaal /[[https://meemnotmeme.notion.site/Ali-Abdaal-Course-Summary-f079816499a04c9396640a8a5cd55339][How to study for exam master class]]/
+* TODO Make templates for your daily, weekly, quarterly and yearly journals
+* TODO Make a system for managing your school work
+* DONE Add your ~config.el~ and ~packages.el~ file on your dotfiles repo
+
+
+[[id:9340f6f5-3993-44d4-ba5e-1d17daff5275][How to study for exam?]]
