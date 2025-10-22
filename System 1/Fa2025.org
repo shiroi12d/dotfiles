@@ -1,0 +1,74 @@
+#+title: Fa2025
+
+* Is101
+:PROPERTIES:
+:Credits: 1
+:Syllabus: [[file:files/SyIs101.org][SyIs101]]
+:END:
+** Homework
+** Schedule
+*** TOOD Is101 class
+SCHEDULED: <2025-10-04 Sat .+1w>
+*** TOOD Is101 class
+SCHEDULED: <2025-10-05 Sun .+1w>
+** Notes
+* Ma101
+:PROPERTIES:
+:Credits: 1
+:Syllabus: [[file:files/SyMa101.org][SyMa101]]
+:END:
+** Homework
+** Schedule
+*** TODO Ma101 class
+SCHEDULED: <2025-10-06 Mon .+1w>
+*** TODO Ma101 class
+SCHEDULED: <2025-10-07 Tue .+1w>
+** Notes
+* He101
+:PROPERTIES:
+:Credits: 1
+:Syllabus: [[file:files/SyHe101.org][SyHe101]]
+:END:
+** Homework
+** Schedul
+*** TODO He101 class
+SCHEDULED: <2025-10-08 Wed .+1w>
+*** TODO He101 class
+SCHEDULED: <2025-10-09 Thu .+1w>
+** Notes
+* Fa2025
+** Schedule
+*** TODO Hand over assignmets to yourself
+SCHEDULED: <2025-10-30 Thu .+2w>
+*** TODO Mid-term exam
+SCHEDULED: <2025-11-27 Thu>
+DEADLINE: <2025-11-30 Sun>
+*** TODO Final exam
+SCHEDULED: <2025-12-28 Sun>
+DEADLINE: <2025-12-31 Wed>
+** Mid-term exam
+*** Is101 mid-term exam
+:PORPERTIES:
+:Grade:
+:END:
+*** Ma101 mid-term exam
+:PROPERTIES:
+:Grade:
+:END:
+*** He101 mid-term exam
+:PROPERTIES:
+:Grade:
+:END:
+** Final exam
+*** Is101 final exam
+:PORPERTIES:
+:Grade:
+:END:
+*** Ma101 final exam
+:PROPERTIES:
+:Grade:
+:END:
+*** He101 final exam
+:PROPERTIES:
+:Grade:
+:END:

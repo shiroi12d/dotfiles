@@ -1,0 +1,10 @@
+#+title: TODOs
+
+* DONE Create a school or university system
+DEADLINE: <2025-09-28 Sun> SCHEDULED: <2025-09-27 Sat>
+ - [x] watch this video on [[https://youtu.be/grbtRhFiPrw?si=Rf26b3eDF_IlHiA5][How I used Org-mode and Neovim to Pass all imy Classe]]
+ - [x] Analyze the potention system I might use
+* TODO Meeting with my siblings about building a team
+SCHEDULED: <2025-10-03 Fri>
+* TODO How can I develop my research skils for leanring
+SCHEDULED: <2025-10-02 Thu>

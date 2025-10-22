@@ -1,0 +1,34 @@
+#+title: README
+
+* My life's purpose
+#+BEGIN_QUOTE
+I live to worship Allah and serve His creation with my strengths.
+#+END_QUOTE
+
+** Core values
+- Faith, growth and Service
+
+* SMART goal /semester base/
+:PROPERTES:
+:Link: [[file:Fa2025.org][Fa2025]]
+:END:
+
+* Weekly schedule
+- Sat, Sun, Mon, Tue, Wed and Thu: Work/growth days
+- Fri: Break and review day
+
+** Weekly review
+- Ask "Did I follow my life's purpose?", "Did I make progress towards my SMART goal?"
+
+* Daily startup
+- Check your SMART goal
+- Write 1 MIT (most improtant task)
+
+* Focused block
+- Work on the MIT first thing in the morning
+- Use 50/10 pomodoro timer
+
+* Daily shutdown
+- Write down what you finished
+- Capture loose thoughts
+- Say Alhamdulillah and release the day
