@@ -12,7 +12,8 @@
 ;;
 ;; - `doom-font' -- the primary font to use
 ;; - `doom-variable-pitch-font' -- a non-monospace font (where applicable)
-;; - `doom-big-font' -- used for `doom-big-font-mode'; use this for
+;; - `doom-big-font' -- used for `doom-big
+
 ;;   presentations or streaming.
 ;; - `doom-unicode-font' -- for unicode glyphs
 ;; - `doom-serif-font' -- for the `fixed-pitch-serif' face
@@ -40,10 +41,10 @@
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
 
-;; Org-mode Configuration  
-(setq org-directory "C:/Users/shiro/.org/")
+;; Org-mode Configuration
+(setq org-directory "~/org/")
 (setq org-default-notes-file (expand-file-name "TODO.org" org-directory))
-(setq org-agenda-files (directory-files-recursively org-directory "\\.org$"))
+(setq org-agenda-files (directory-files-recursively org-directory "\\org$"))
 (setq org-agenda-skip-scheduled-if-done t
       org-agenda-skip-deadline-if-done t
       org-agenda-skip-timestamp-if-done t)
@@ -52,10 +53,14 @@
   (setq org-capture-templates
         `(("t" "TODO" entry
            (file ,(expand-file-name "TODO.org" org-directory))
-           "* TODO %?"))))
+           "* TODO %?")
+
+          ("r" "refile" plain
+           (file ,(expand-file-name "refile.org" org-directory))
+           "%?"))))
 
 ;; Org-roam Configuration
-(setq org-roam-directory (file-truename "C:/Users/shiro/.org/roam/"))
+(setq org-roam-directory (file-truename "~/org/roam/"))
 
 (use-package! org-roam
   :bind (("C-c n f" . org-roam-node-find)
@@ -64,12 +69,16 @@
   :config
   (org-roam-db-autosync-mode))
 
+;; Moving .orgids file to another directory
+(after! org
+  (setq org-id-locations-file (expand-file-name ".orgids" "~/.emacs.d/.local/etc/org/")))
+
 ;; Font
 (setq doom-font (font-spec :family "Cascadia Code" :size 14))
 
 ;; Leader key map for SPC o c
 (map! :leader
-      :prefix "o" 
+      :prefix "o"
       :desc "Org Capture"
       "c" #'org-capture)
 
